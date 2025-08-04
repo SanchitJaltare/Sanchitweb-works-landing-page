@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanchit WebWorks - Landing Page</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f6f9; /* NEW professional body background */
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      max-width: 150px;
+      margin-bottom: 0.5rem;
+    }
+
+    nav.social-nav {
+      margin-top: 0.5rem;
+    }
+
+    nav.social-nav a {
+      color: #333;
+      margin: 0 10px;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+    }
+
+    nav.social-nav a:hover {
+      color: #007bff;
+    }
+
+    .hero {
+      padding: 4rem 1rem;
+      text-align: center;
+      background-color: #ffffff; /* Hero is white for clean focus */
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .btn.instagram {
+      background-color: #E1306C;
+    }
+
+    .btn.github {
+      background-color: #333;
+    }
+
+    .btn.instagram:hover {
+      background-color: #c0255d;
+    }
+
+    .btn.github:hover {
+      background-color: #1f1f1f;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+      gap: 2rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f0f0f0; /* Footer subtle contrast */
+      border-top: 1px solid #ddd;
+    }
+
+    .footer-socials a {
+      color: #333;
+      margin: 0 10px;
+      font-size: 1.3rem;
+    }
+
+    .footer-socials a:hover {
+      color: #007bff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 1.5rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <img src="https://i.postimg.cc/3RY8MWtv/Olivi-2.png" alt="Sanchit WebWorks Logo" class="logo">
+    <nav class="social-nav">
+      <a href="https://www.instagram.com/sanchitwebworks/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/SanchitJaltare" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sanchit-jaltare-a23475368/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hi, I'm Sanchit – I Build Websites.</h1>
+    <p>Check out my projects on Instagram and get the code from GitHub.</p>
+    <div class="cta-buttons">
+      <a href="https://www.instagram.com/sanchitwebworks/" class="btn instagram" target="_blank">📸 View on Instagram</a>
+      <a href="https://github.com/SanchitJaltare" class="btn github" target="_blank">💻 View Code on GitHub</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <img src="https://i.postimg.cc/fypxN7FN/37ac4c20-06ad-4143-a324-014c5f733094.jpg" alt="Sanchit Jaltare" class="profile-img">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I’m Sanchit Jaltare, a self-taught web developer and digital creator.
+        I build fast, responsive websites using HTML, CSS, WordPress, and custom frontend code.
+        I share my projects on Instagram and open-source the code on GitHub.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Sanchit Jaltare. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/sanchitwebworks/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/SanchitJaltare" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sanchit-jaltare-a23475368/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
